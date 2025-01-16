@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "75kTFnQ82JSZG-FPt", // Ensure this is your actual Public Key
+            });
+        })();
+    </script>
+</head>
+<body>
+    <form id="leaveForm">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <select name="leaveType" required>
+            <option value="">Select Leave Type</option>
+            <option value="Sick Leave">Sick Leave</option>
+            <option value="Casual Leave">Casual Leave</option>
+            <option value="Maternity Leave">Maternity Leave</option>
+        </select>
+        <input type="date" name="startDate" required>
+        <input type="date" name="endDate" required>
+        <textarea name="reason" placeholder="Reason" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>

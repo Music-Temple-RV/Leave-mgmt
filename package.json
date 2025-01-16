@@ -1,0 +1,26 @@
+{
+  "name": "leave-management-system",
+  "version": "1.0.0",
+  "description": "A leave management system for submitting leave requests.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step can be added here'",
+    "deploy": "gh-pages -d src"
+  },
+  "keywords": [
+    "leave",
+    "management",
+    "system",
+    "request"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "emailjs-com": "^2.6.4",
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
