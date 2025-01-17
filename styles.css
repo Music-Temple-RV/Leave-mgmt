@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background: linear-gradient(135deg, #EE602F, #F49038, #F8BE3D);
@@ -15,8 +15,8 @@ body {
     margin: auto;
     overflow: hidden;
     background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 20px 40px rgba(0, 0, 0, 0.2); /* More pronounced drop shadow */
 }
 
 header {
@@ -24,7 +24,7 @@ header {
     color: #ffffff;
     padding: 20px;
     text-align: center;
-    border-radius: 10px 10px 0 0;
+    border-radius: 15px 15px 0 0;
     position: relative;
     display: flex;
     align-items: center;
@@ -43,11 +43,14 @@ header .logo {
 h1 {
     margin: 0;
     padding-left: 100px;
+    font-weight: 500;
+    font-size: 24px;
 }
 
 form {
     padding: 30px;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 20px 40px rgba(0, 0, 0, 0.2); /* More pronounced drop shadow */
 }
 
 form input[type="text"],
@@ -58,7 +61,7 @@ form textarea {
     width: 100%;
     padding: 15px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 5px;
     box-sizing: border-box;
     font-size: 16px;
@@ -83,12 +86,14 @@ form button[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background 0.3s ease, transform 0.3s ease;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 form button[type="submit"]:hover {
     background: linear-gradient(135deg, #F49038, #F8BE3D);
     transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 form button[type="submit"]:active {
