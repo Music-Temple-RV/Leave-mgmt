@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #EE602F, #F49038, #F8BE3D);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    background: #35424a;
+    background: linear-gradient(135deg, #EE602F, #F49038);
     color: #ffffff;
     padding: 20px;
     text-align: center;
@@ -70,13 +70,13 @@ form input[type="email"]:focus,
 form input[type="date"]:focus,
 form select:focus,
 form textarea:focus {
-    border-color: #35424a;
+    border-color: #EE602F;
     outline: none;
-    box-shadow: 0 0 5px rgba(53, 66, 74, 0.5);
+    box-shadow: 0 0 5px rgba(238, 96, 47, 0.5);
 }
 
 form button[type="submit"] {
-    background: #35424a;
+    background: linear-gradient(135deg, #EE602F, #F49038);
     color: #ffffff;
     padding: 15px;
     border: none;
@@ -87,7 +87,7 @@ form button[type="submit"] {
 }
 
 form button[type="submit"]:hover {
-    background: #1d2b33;
+    background: linear-gradient(135deg, #F49038, #F8BE3D);
     transform: scale(1.05);
 }
 
@@ -98,7 +98,7 @@ form button[type="submit"]:active {
 
 form button[type="submit"]:focus {
     outline: none;
-    box-shadow: 0 0 5px rgba(53, 66, 74, 0.5);
+    box-shadow: 0 0 5px rgba(238, 96, 47, 0.5);
 }
 
 /* Responsive Design */
