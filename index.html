@@ -30,8 +30,9 @@
                 <option value="Casual Leave">Casual Leave</option>
                 <option value="Maternity Leave">Maternity Leave</option>
             </select>
-            <input type="date" name="startDate" required>
-            <input type="date" name="endDate" required>
+            <input type="date" name="startDate" id="startDate" required>
+            <input type="date" name="endDate" id="endDate" required>
+            <input type="text" name="daysRequired" id="daysRequired" placeholder="Number of Days" readonly>
             <textarea name="reason" placeholder="Reason" required></textarea>
             <button type="submit">Submit</button>
         </form>
