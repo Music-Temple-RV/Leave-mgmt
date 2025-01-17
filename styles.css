@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     max-width: 600px;
     margin: auto;
     overflow: hidden;
@@ -32,7 +32,7 @@ header {
 }
 
 header .logo {
-    width: 80px; /* Increased size */
+    width: 80px;
     height: auto;
     position: absolute;
     top: 50%;
@@ -42,7 +42,7 @@ header .logo {
 
 h1 {
     margin: 0;
-    padding-left: 100px; /* Adjusted padding to prevent overlay */
+    padding-left: 100px;
 }
 
 form {
@@ -99,4 +99,41 @@ form button[type="submit"]:active {
 form button[type="submit"]:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(53, 66, 74, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header .logo {
+        position: static;
+        transform: none;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="date"],
+    form select,
+    form textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    form button[type="submit"] {
+        padding: 10px;
+        font-size: 14px;
+    }
 }
