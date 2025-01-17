@@ -14,35 +14,40 @@ body {
     max-width: 600px;
     margin: auto;
     overflow: hidden;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 header {
     background: #35424a;
     color: #ffffff;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
-    border-radius: 5px 5px 0 0;
+    border-radius: 10px 10px 0 0;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header .logo {
-    width: 100px;
+    width: 80px; /* Increased size */
     height: auto;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
 }
 
 h1 {
     margin: 0;
-    padding-top: 20px;
+    padding-left: 100px; /* Adjusted padding to prevent overlay */
 }
 
 form {
-    background: #ffffff;
     padding: 30px;
-    border-radius: 0 0 5px 5px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px;
 }
 
 form input[type="text"],
@@ -57,6 +62,7 @@ form textarea {
     border-radius: 5px;
     box-sizing: border-box;
     font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 form input[type="text"]:focus,
@@ -77,15 +83,17 @@ form button[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 form button[type="submit"]:hover {
     background: #1d2b33;
+    transform: scale(1.05);
 }
 
 form button[type="submit"]:active {
     background: #111b21;
+    transform: scale(1);
 }
 
 form button[type="submit"]:focus {
